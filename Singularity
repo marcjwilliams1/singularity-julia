@@ -38,7 +38,6 @@ From: library/julia:1.0.2
   /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"Optim\")"
   /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"ArgParse\")"
   /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"CSV\")"
-  /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"RCall\")"
 
 %runscript
   # executes with the singularity run command
