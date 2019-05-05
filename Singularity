@@ -33,6 +33,7 @@ From: library/julia:1.0.2
 
   #add julia packages
   /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"Distributions\")"
+  /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"RCall\")"
 
 %runscript
   # executes with the singularity run command
