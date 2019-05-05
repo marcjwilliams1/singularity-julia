@@ -33,7 +33,10 @@ From: library/julia:1.0.2
 
   #add julia packages
   /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"Distributions\")"
-  /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"RCall\")"
+  /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"DataFrames\")"
+  /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"Optim\")"
+  /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"ArgParse\")"
+  /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"CSV\")"
 
 %runscript
   # executes with the singularity run command
