@@ -32,7 +32,7 @@ From: library/julia:1.0.2
   apt-get install -y hdf5-tools
 
   #add julia packages
-  julia -e "import Pkg; Pkg.add(\"Distributions\")"
+  /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"Distributions\")"
 
 %runscript
   # executes with the singularity run command
