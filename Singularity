@@ -30,6 +30,7 @@ From: library/julia:1.0.2
   apt-get install -y libpixman-1-0
   apt-get install -y gettext
   apt-get install -y hdf5-tools
+  apt-get install -y r-base
 
   #add julia packages
   /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"Distributions\")"
