@@ -30,7 +30,7 @@ From: library/julia:1.0.2
   apt-get install -y libpixman-1-0
   apt-get install -y gettext
   apt-get install -y hdf5-tools
-  apt-get install -y r-base
+  apt-get install -y r-base r-base-dev
 
   #add julia packages
   /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"Distributions\")"
@@ -38,6 +38,7 @@ From: library/julia:1.0.2
   /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"Optim\")"
   /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"ArgParse\")"
   /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"CSV\")"
+  /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"RCall\")"
 
 %runscript
   # executes with the singularity run command
