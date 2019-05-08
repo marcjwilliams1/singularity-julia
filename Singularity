@@ -40,6 +40,9 @@ From: library/julia:1.0.2
   /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"CSV\")"
   /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"Plots\")"
   /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"Flux\")"
+  /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"Revise\")"
+  /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"ApproxBayes\")"
+  /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"CancerSeqSim\")"
 
 %runscript
   # executes with the singularity run command
