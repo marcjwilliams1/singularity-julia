@@ -41,8 +41,23 @@ From: library/julia:1.0.2
   /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"Plots\")"
   /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"Flux\")"
   /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"Revise\")"
-  /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"ApproxBayes\")"
   /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"CancerSeqSim\")"
+  /usr/local/julia/bin/julia -e "import Pkg; Pkg.add(\"ProgressMeter\")"
+
+  # add R packages from CRAN
+  Rscript -e "install.packages(pkgs = c('devtools', 'cowplot', 'gtools', 'argparse', 'uwot', 'fuzzyjoin', 'dbscan', 'jcolors', 'ggthemes', 'viridis'), \
+      repos='https://cran.revolutionanalytics.com/', \
+      dependencies=TRUE, \
+      clean = TRUE)"
+
+  #add R packages from bioconductor
+   R -e "source('https://bioconductor.org/biocLite.R'); \
+                    biocLite('GenomicRanges')"
+   R -e "source('https://bioconductor.org/biocLite.R'); \
+                     biocLite('IRanges')"
+
+  # add R packages from github
+   Rscript -e "library(devtools); install_github('im3sanger/dndscv')"
 
 %runscript
   # executes with the singularity run command
