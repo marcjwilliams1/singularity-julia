@@ -9,7 +9,7 @@ From: jupyter/datascience-notebook
 
 %post
   # add R packages from CRAN
-  Rscript -e "install.packages(pkgs = c('ggplot', 'cowplot', 'readr')
+  Rscript -e "install.packages(pkgs = c('ggplot', 'cowplot', 'readr'))"
 
   # add R packages from github
   Rscript -e "library(devtools); install_github('marcjwilliams1/dndscv', ref = 'dev')"
